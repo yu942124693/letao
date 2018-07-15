@@ -21,8 +21,12 @@ function render(){
             totalPages:Math.ceil(info.total/info.size),
             size:'small',
             onPageClicked:function(a,b,c,p){
-              
+            // var page;
+            // page=3
+            // var p;
+            // p=3;
                  page = p;
+                console.log(page)
                
                 render();
                 
@@ -30,7 +34,7 @@ function render(){
         })
         }
     })
-    console.log(page)
+    // console.log(page)
 }
 
 $('.btn_add').on('click',function(){
